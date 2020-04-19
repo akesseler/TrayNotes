@@ -1,16 +1,28 @@
 ﻿/*
- * Copyright (C)  2014  Axel Kesseler
+ * MIT License
  * 
- * This software is free and you can use it for any purpose. Furthermore, 
- * you are free to copy, to modify and/or to redistribute this software.
+ * Copyright (c) 2020 plexdata.de
  * 
- * In addition, this software is distributed in the hope that it will be 
- * useful, but WITHOUT ANY WARRANTY; without even the implied warranty of 
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
  * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
  */
 
-namespace plexdata.TrayNotes
+namespace Plexdata.TrayNotes
 {
     partial class SettingsDialog
     {
@@ -56,7 +68,7 @@ namespace plexdata.TrayNotes
             this.grpShortcuts = new System.Windows.Forms.GroupBox();
             this.valAddStartup = new System.Windows.Forms.CheckBox();
             this.valAddDesktop = new System.Windows.Forms.CheckBox();
-            this.valBackColor = new plexdata.Controls.ColorComboBox();
+            this.valBackColor = new Plexdata.Controls.ColorComboBox();
             this.grpBehaviour.SuspendLayout();
             this.grpAppearance.SuspendLayout();
             this.grpShortcuts.SuspendLayout();
@@ -265,7 +277,7 @@ namespace plexdata.TrayNotes
 
         private System.Windows.Forms.Button btnAccept;
         private System.Windows.Forms.Button btnCancel;
-        private plexdata.Controls.ColorComboBox valBackColor;
+        private Plexdata.Controls.ColorComboBox valBackColor;
         private System.Windows.Forms.GroupBox grpBehaviour;
         private System.Windows.Forms.GroupBox grpAppearance;
         private System.Windows.Forms.CheckBox valDiscardData;

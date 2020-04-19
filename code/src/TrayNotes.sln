@@ -1,12 +1,21 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tray Notes (APP)", "Tray Notes (APP)\Tray Notes (APP).csproj", "{9043F7F1-4695-4A3E-93DF-894ABD8CF17D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C7DAE639-37B8-4276-8F3A-DBB4CEE813D6} = {C7DAE639-37B8-4276-8F3A-DBB4CEE813D6}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tray Notes (DLL)", "Tray Notes (DLL)\Tray Notes (DLL).vcproj", "{C7DAE639-37B8-4276-8F3A-DBB4CEE813D6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tray Notes (DLL)", "Tray Notes (DLL)\Tray Notes (DLL).vcxproj", "{C7DAE639-37B8-4276-8F3A-DBB4CEE813D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General", "General", "{A8C3AC0C-1FA7-4D18-8B66-55A1FBDE1343}"
+	ProjectSection(SolutionItems) = preProject
+		clean.cmd = clean.cmd
+		HISTORY.md = HISTORY.md
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,5 +34,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC1DF67A-E103-4B03-81ED-301C0A60199F}
 	EndGlobalSection
 EndGlobal
