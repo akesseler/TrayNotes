@@ -15,6 +15,10 @@
 The program _Tray Notes_ represents a text management tool that allows dragging and 
 dropping text content onto tray icon.
 
+An overview can be found on _sourceforge.net_ under https://sourceforge.net/projects/traynotesnet/.
+
+The current release also be found on _sourceforge.net_ under https://sourceforge.net/projects/traynotesnet/files/.
+
 ### Licensing
 
 The software has been published under the terms of _MIT License_.
