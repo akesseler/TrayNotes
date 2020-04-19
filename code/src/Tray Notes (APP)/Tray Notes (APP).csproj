@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9043F7F1-4695-4A3E-93DF-894ABD8CF17D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>plexdata.TrayNotes</RootNamespace>
+    <AssemblyName>traynotes</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Resources\TrayNotes.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ColorComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RichEditEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabPageEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SettingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SettingsDialog.Designer.cs">
+      <DependentUpon>SettingsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dialogs\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SettingsDialog.resx">
+      <DependentUpon>SettingsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Utilities\CursorWrapper.cs" />
+    <Compile Include="Utilities\CustomColorTable.cs" />
+    <Compile Include="Utilities\Settings.cs" />
+    <Compile Include="Utilities\ShellShortcut.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrayNotes.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrayNotesSmall.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close32.png" />
+    <None Include="Resources\Edit16.png" />
+    <None Include="Resources\Edit32.png" />
+    <None Include="Resources\Exit16.png" />
+    <None Include="Resources\Exit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New32.png" />
+    <None Include="Resources\Paste16.png" />
+    <None Include="Resources\Paste32.png" />
+    <None Include="Resources\Save16.png" />
+    <None Include="Resources\Save32.png" />
+    <None Include="Resources\SaveAll16.png" />
+    <None Include="Resources\SaveAll32.png" />
+    <None Include="Resources\Settings16.png" />
+    <None Include="Resources\Settings32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quit16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Load16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Load32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
