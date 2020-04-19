@@ -1,20 +1,32 @@
 ﻿/*
- * Copyright (C)  2014  Axel Kesseler
+ * MIT License
  * 
- * This software is free and you can use it for any purpose. Furthermore, 
- * you are free to copy, to modify and/or to redistribute this software.
+ * Copyright (c) 2020 plexdata.de
  * 
- * In addition, this software is distributed in the hope that it will be 
- * useful, but WITHOUT ANY WARRANTY; without even the implied warranty of 
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
  * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
  */
 
 using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 
-namespace plexdata.TrayNotes
+namespace Plexdata.TrayNotes
 {
     public partial class SettingsDialog : Form
     {
@@ -61,8 +73,8 @@ namespace plexdata.TrayNotes
                         // Checked change may not happen...
                         this.valPasteDate.Enabled = this.valPasteLabel.Checked;
 
-                        this.valAddStartup.Checked = plexdata.Shell.Shortcut.IsStartupShortcut(ShourtcutName);
-                        this.valAddDesktop.Checked = plexdata.Shell.Shortcut.IsDesktopShortcut(ShourtcutName);
+                        this.valAddStartup.Checked = Plexdata.Shell.Shortcut.IsStartupShortcut(ShourtcutName);
+                        this.valAddDesktop.Checked = Plexdata.Shell.Shortcut.IsDesktopShortcut(ShourtcutName);
                     }
                 }
                 catch (Exception exception)
@@ -118,11 +130,11 @@ namespace plexdata.TrayNotes
                 {
                     if (this.valAddStartup.Checked)
                     {
-                        plexdata.Shell.Shortcut.CreateStartupShortcut(ShourtcutName);
+                        Plexdata.Shell.Shortcut.CreateStartupShortcut(ShourtcutName);
                     }
                     else
                     {
-                        plexdata.Shell.Shortcut.RemoveStartupShortcut(ShourtcutName);
+                        Plexdata.Shell.Shortcut.RemoveStartupShortcut(ShourtcutName);
                     }
                 }
             }
@@ -136,7 +148,7 @@ namespace plexdata.TrayNotes
                 // checked state and shortcut availability is the same the "checked changed" event is 
                 // not fired again. The other way round, in case of a difference the second execution 
                 // is locked, see above.
-                this.valAddStartup.Checked = plexdata.Shell.Shortcut.IsStartupShortcut(ShourtcutName);
+                this.valAddStartup.Checked = Plexdata.Shell.Shortcut.IsStartupShortcut(ShourtcutName);
                 this.locked = false;
             }
         }
@@ -153,11 +165,11 @@ namespace plexdata.TrayNotes
                 {
                     if (this.valAddDesktop.Checked)
                     {
-                        plexdata.Shell.Shortcut.CreateDesktopShortcut(ShourtcutName);
+                        Plexdata.Shell.Shortcut.CreateDesktopShortcut(ShourtcutName);
                     }
                     else
                     {
-                        plexdata.Shell.Shortcut.RemoveDesktopShortcut(ShourtcutName);
+                        Plexdata.Shell.Shortcut.RemoveDesktopShortcut(ShourtcutName);
                     }
                 }
             }
@@ -171,7 +183,7 @@ namespace plexdata.TrayNotes
                 // checked state and shortcut availability is the same the "checked changed" event is 
                 // not fired again. The other way round, in case of a difference the second execution 
                 // is locked, see above.
-                this.valAddDesktop.Checked = plexdata.Shell.Shortcut.IsDesktopShortcut(ShourtcutName);
+                this.valAddDesktop.Checked = Plexdata.Shell.Shortcut.IsDesktopShortcut(ShourtcutName);
                 this.locked = false;
             }
         }

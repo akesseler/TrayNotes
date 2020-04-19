@@ -1,16 +1,28 @@
 ﻿/*
- * Copyright (C)  2014  Axel Kesseler
+ * MIT License
  * 
- * This software is free and you can use it for any purpose. Furthermore, 
- * you are free to copy, to modify and/or to redistribute this software.
+ * Copyright (c) 2020 plexdata.de
  * 
- * In addition, this software is distributed in the hope that it will be 
- * useful, but WITHOUT ANY WARRANTY; without even the implied warranty of 
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
  * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
  */
 
-namespace plexdata.TrayNotes
+namespace Plexdata.TrayNotes
 {
     partial class MainForm
     {
@@ -83,7 +95,7 @@ namespace plexdata.TrayNotes
             this.mainToolbarContainer = new System.Windows.Forms.ToolStripContainer();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.tabEditView = new plexdata.TrayNotes.TabViewEx();
+            this.tabEditView = new Plexdata.TrayNotes.TabViewEx();
             this.pageHeaderMenuCopy = new System.Windows.Forms.ToolStripMenuItem();
             this.mainNotifyMenu.SuspendLayout();
             this.mainToolbar.SuspendLayout();
@@ -120,7 +132,7 @@ namespace plexdata.TrayNotes
             // 
             // mainNotifyMenuAbout
             // 
-            this.mainNotifyMenuAbout.Image = global::plexdata.TrayNotes.Properties.Resources.About16;
+            this.mainNotifyMenuAbout.Image = global::Plexdata.TrayNotes.Properties.Resources.About16;
             this.mainNotifyMenuAbout.Name = "mainNotifyMenuAbout";
             this.mainNotifyMenuAbout.Size = new System.Drawing.Size(137, 22);
             this.mainNotifyMenuAbout.Text = "About...";
@@ -150,7 +162,7 @@ namespace plexdata.TrayNotes
             // 
             // mainNotifyMenuFore
             // 
-            this.mainNotifyMenuFore.Image = global::plexdata.TrayNotes.Properties.Resources.Edit16;
+            this.mainNotifyMenuFore.Image = global::Plexdata.TrayNotes.Properties.Resources.Edit16;
             this.mainNotifyMenuFore.Name = "mainNotifyMenuFore";
             this.mainNotifyMenuFore.Size = new System.Drawing.Size(137, 22);
             this.mainNotifyMenuFore.Text = "Activate...";
@@ -244,7 +256,7 @@ namespace plexdata.TrayNotes
             this.tbbQuit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tbbQuitHide,
             this.tbbQuitExit});
-            this.tbbQuit.Image = global::plexdata.TrayNotes.Properties.Resources.Quit16;
+            this.tbbQuit.Image = global::Plexdata.TrayNotes.Properties.Resources.Quit16;
             this.tbbQuit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tbbQuit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tbbQuit.Margin = new System.Windows.Forms.Padding(1);
@@ -295,7 +307,7 @@ namespace plexdata.TrayNotes
             // tbbLoad
             // 
             this.tbbLoad.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tbbLoad.Image = global::plexdata.TrayNotes.Properties.Resources.Load16;
+            this.tbbLoad.Image = global::Plexdata.TrayNotes.Properties.Resources.Load16;
             this.tbbLoad.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tbbLoad.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tbbLoad.Margin = new System.Windows.Forms.Padding(1);
@@ -343,7 +355,7 @@ namespace plexdata.TrayNotes
             // 
             this.tbbClear.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tbbClear.Enabled = false;
-            this.tbbClear.Image = global::plexdata.TrayNotes.Properties.Resources.Clear16;
+            this.tbbClear.Image = global::Plexdata.TrayNotes.Properties.Resources.Clear16;
             this.tbbClear.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tbbClear.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tbbClear.Margin = new System.Windows.Forms.Padding(1);
@@ -380,7 +392,7 @@ namespace plexdata.TrayNotes
             // 
             this.tbbCopy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tbbCopy.Enabled = false;
-            this.tbbCopy.Image = global::plexdata.TrayNotes.Properties.Resources.Copy16;
+            this.tbbCopy.Image = global::Plexdata.TrayNotes.Properties.Resources.Copy16;
             this.tbbCopy.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tbbCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tbbCopy.Margin = new System.Windows.Forms.Padding(1);
@@ -430,7 +442,7 @@ namespace plexdata.TrayNotes
             // tbbAbout
             // 
             this.tbbAbout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tbbAbout.Image = global::plexdata.TrayNotes.Properties.Resources.About16;
+            this.tbbAbout.Image = global::Plexdata.TrayNotes.Properties.Resources.About16;
             this.tbbAbout.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tbbAbout.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tbbAbout.Margin = new System.Windows.Forms.Padding(1);
@@ -486,7 +498,7 @@ namespace plexdata.TrayNotes
             // 
             // pageHeaderMenuClear
             // 
-            this.pageHeaderMenuClear.Image = global::plexdata.TrayNotes.Properties.Resources.Clear16;
+            this.pageHeaderMenuClear.Image = global::Plexdata.TrayNotes.Properties.Resources.Clear16;
             this.pageHeaderMenuClear.Name = "pageHeaderMenuClear";
             this.pageHeaderMenuClear.Size = new System.Drawing.Size(152, 22);
             this.pageHeaderMenuClear.Text = "Clear";
@@ -595,7 +607,7 @@ namespace plexdata.TrayNotes
         private System.Windows.Forms.ToolStripMenuItem mainNotifyMenuSettings;
         private System.Windows.Forms.ToolStripSeparator mainNotifyMenuSep1;
         private System.Windows.Forms.ToolStripMenuItem mainNotifyMenuExit;
-        private plexdata.TrayNotes.TabViewEx tabEditView;
+        private Plexdata.TrayNotes.TabViewEx tabEditView;
         private System.Windows.Forms.ToolStrip mainToolbar;
         private System.Windows.Forms.ToolStripSeparator tbsSep1;
         private System.Windows.Forms.ToolStripButton tbbNew;
